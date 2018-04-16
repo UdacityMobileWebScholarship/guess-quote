@@ -1,0 +1,6 @@
+{
+  "name": "route-manager",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./RouteManager.js"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "GuessTheQuote-api",
+  "version": "1.0.0",
+  "description": "RESTful API for GuessTheQuote",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js --config nodemon.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twishasaraiya/GuessTheQuote.git"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "api"
+  ],
+  "author": "GUCS-2018",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twishasaraiya/GuessTheQuote/issues"
+  },
+  "homepage": "https://github.com/twishasaraiya/GuessTheQuote",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.14",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}

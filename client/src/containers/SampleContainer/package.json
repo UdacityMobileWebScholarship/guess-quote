@@ -1,0 +1,6 @@
+{
+  "name": "sample-container",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SampleContainer.js"
+}

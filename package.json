@@ -1,0 +1,22 @@
+{
+  "name": "guessthequote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && cd ./client/ && npm i && cd ../ && cd ./server/ && npm i && cd ../ && npm run dev",
+    "client": "cd ./client/ && npm start",
+    "server": "cd ./server/ && npm start",
+    "dev": "concurrently \"npm run server\" \" npm run client\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twishasaraiya/GuessTheQuote"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
