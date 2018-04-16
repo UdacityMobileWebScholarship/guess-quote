@@ -6,11 +6,11 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
 ## Table Of Contents
 
   1. [Features Wishlist](#features-wishlist)
-  1. [Design Specs](#design-specs)
-  1. [Requirements for Development](#requirements-for-development)
-  1. [Setup for Development](Setup-for-Development)
-  1. [Technology Stack](Technology-Stack)
-  1. [Contributing Guidelines](Contributing-Guidelines)
+  2. [Design Specs](#design-specs)
+  3. [Requirements for Development](#requirements-for-development)
+  4. [Setup for Development](#setup-for-development)
+  5. [Technology Stack](#technology-stack)
+  6. [Contributing Guidelines](#contributing-guidelines)
 
 ## Features Wishlist
 
@@ -21,8 +21,10 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
 - [ ] Share your score on Social Media (like Facebook for now)
 
 ## Design Specs
+
   * Font: [Gotham](https://www.wfonts.com/font/gotham)
   * Colors: Random for ever question/session.
+
 ## Requirements for Development
 
  - node
@@ -41,6 +43,7 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
     $> npm start
  ```
   - Goto http://localhost:3000/( The server is running on http://localhost:3001/)
+
 ## Discussion
 
  - Join our Slack team ( ADD THE CHANNEL NAME)
