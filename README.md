@@ -23,7 +23,7 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
 ## Design Specs
 
   * Font: [Gotham](https://www.wfonts.com/font/gotham)
-  * Colors: Random for ever question/session.
+  * Colors: Random for every question/session.
 
 ## Requirements for Development
 
@@ -46,7 +46,7 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
 
 ## Discussion
 
- - Join our Slack team ( ADD THE CHANNEL NAME)
+ - Join our Slack team at [#cp_quote_app](https://mobilewebindiascholar.slack.com/messages/CA7486673/)
 
 ## Technology Stack
 
