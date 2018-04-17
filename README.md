@@ -48,9 +48,10 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
   - Open any browser and goto http://localhost:3000  
     **(The server is running on http://localhost:3001)**
 
-### [Optional] Setup Upstreams
+<details>
+<summary><strong> [OPTIONAL] Setup Upstreams</strong></summary>
 
-*Note* An upstream repository is the original UdacityMobileWebScholarship repository.
+**Note**: An upstream repository is the original UdacityMobileWebScholarship repository.
 
 Once you have forked as directed in the previous section, you would not be following changes made here, in the original repository.
 
@@ -67,9 +68,9 @@ Once you have forked as directed in the previous section, you would not be follo
  ```
  **To return to your branch on your fork**
   - Run
- ```bash
- git checkout master
- ```
+   ```bash
+   git checkout master
+   ```
 
 #### Next steps
 
@@ -87,6 +88,9 @@ the simplest is a fast forward merge
 
 ` git merge upstream/master`
 But merges are complicated. Please do read official documentation on merge. Understand how they work. And then proceed to a PR.
+
+</details>
+
 ## Discussion
 
  - Join our Slack team at [#cp_quote_app](https://mobilewebindiascholar.slack.com/messages/CA7486673/)
