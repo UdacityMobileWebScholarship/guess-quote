@@ -28,22 +28,25 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
 
 ## Requirements for Development
 
- - node
- - npm
- - Git
+ - [Node](https://nodejs.org/en/) — Preferred 8.11.1 LTS
+ - [npm](https://www.npmjs.com/get-npm) — Preferred 5.8.0
+ - [Git](https://git-scm.com/)
 
 ## Setup for Development
 
  Refer [this link](https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940) for setup illustration with examples and images
  - Fork the repository by clicking on the fork button on the top of the page. This will create a copy of this repository in your account.
  - Click on clone or download and copy the url
- - Open a terminal and run the following git command:
+ - Open a terminal(CLI) and run the following commands:
  
  ```bash
-    $> git clone https://github.com/twishasaraiya/GuessTheQuote.git
-    $> npm start
+    git clone https://github.com/UdacityMobileWebScholarship/guess-quote.git
+    cd guess-quote
+    npm i
+    npm start
  ```
-  - Goto http://localhost:3000/( The server is running on http://localhost:3001/)
+  - Open any browser and goto http://localhost:3000  
+    **(The server is running on http://localhost:3001)**
 
 ## Discussion
 
