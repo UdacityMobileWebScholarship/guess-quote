@@ -22,6 +22,7 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
 
 ## Design Specs
 
+  * [UI Designs](https://github.com/VarunDevPro/gtq-designs)
   * Font: [Gotham](https://www.wfonts.com/font/gotham)
   * Colors: Random for every question/session.
 
