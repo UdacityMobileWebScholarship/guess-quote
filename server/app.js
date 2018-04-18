@@ -8,7 +8,9 @@ const app = express()
 
 const userRoutes = require('./api/routes/user')
 
-// TODO: connect to database
+// connect to local mongoDB
+mongoose.connect('mongodb://localhost/guess-quote');
+mongoose.Promise = global.Promise
 
 app.use(cors())
 app.use(morgan('dev'))
