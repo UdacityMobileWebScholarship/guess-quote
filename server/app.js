@@ -9,7 +9,7 @@ const app = express()
 const userRoutes = require('./api/routes/user')
 
 // connect to local mongoDB
-mongoose.connect('mongodb://localhost/guess-quote');
+mongoose.connect('mongodb://localhost:27017/guess-quote');
 mongoose.Promise = global.Promise
 
 app.use(cors())
@@ -19,6 +19,7 @@ app.use(bodyParser.json())
 
 // routes
 app.use('/user', userRoutes)
+
 
 // error handling
 app.use((req, res, next) => {
