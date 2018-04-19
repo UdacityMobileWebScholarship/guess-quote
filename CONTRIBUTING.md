@@ -6,17 +6,48 @@ The following is a set of guidelines for contributing to Guess The Quote Project
 
 # How Can I Contribute?
 
+* [Feature Development](feature-development)
 * [Reporting Bugs](#reporting-bugs)
 * [Pull Request](#pull-request)
 * [Suggesting Enhancements](#suggesting-enhancements)
 * [Your First Code Contribution](your-first-code-contribution)
-     
+
+## Feature Development
+#### Steps to Follow:    
+1. Start with an updated local development branch -- by checking out the dev branch and pulling changes:    
+`git checkout develop`  
+`git pull origin develop`  
+
+2. Create and checkout a feature branch:   
+`git checkout -b initials/new-feature-branch-name`  
+*Note: LP convention: Your branch name should start with your initials and then a description of your feature (as above).*  
+
+3. Do work in your feature branch, committing early and often:    
+`git commit -m "Comment about the commit"`  
+
+4. Rebase frequently to incorporate upstream changes:  
+`git fetch origin develop`  
+`git rebase origin/develop`    
+
+- or -  
+`git checkout develop`  
+`git pull`  
+`git checkout initials/new-feature-branch-name`  
+`git rebase development`    
+
+5. Optional: Perform an interactive rebase (squash) your commits before pushing the branch:  
+`git fetch origin develop`  
+`git rebase -i origin/develop`    
+
+6. Once you have reviewed your changes, and verified formatting and intention, push your changes upstream to origin:   
+`git push -u origin initials/new-feature-branch-name`  
+
 ## Reporting Bugs
 This section guides you on how to submit an effective bug report for Guess The Quote. Following these guidelines will help maintainers and the community understand your report :pencil: and reproduce the behavior :computer: :computer:. When you create a bug report, please include as many details as possible.
 
 **Before submitting a bug report**
 * Perform a cursory search to see if the problem has already been reported. If it has and the issue is still open, add a comment to the existing issue instead of opening a new one.
-  
+
 **How Do I Submit A (Good) Bug Report?**
 * **Give a clear and descriptive title** to identify the problem.
 * **Explain what behavior you expected to see instead and why**.
