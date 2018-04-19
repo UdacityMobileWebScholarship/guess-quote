@@ -33,7 +33,7 @@ The following is a set of guidelines for contributing to Guess The Quote Project
 `git checkout develop`  
 `git pull`  
 `git checkout initials/new-feature-branch-name`  
-`git rebase development`    
+`git rebase develop`    
 
 5. Optional: Perform an interactive rebase (squash) your commits before pushing the branch:  
 `git fetch origin develop`  
