@@ -42,7 +42,7 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
  ```bash
     git clone https://github.com/<your-github-username>/guess-quote.git
     cd guess-quote
-    npm i
+    npm run setup
     npm start
  ```
   - Open any browser and goto http://localhost:3000  
