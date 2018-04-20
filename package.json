@@ -9,7 +9,9 @@
     "client": "cd ./client/ && npm start",
     "server": "cd ./server/ && npm start",
     "dev": "concurrently \"npm run server\" \" npm run client\" ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint {client,server}/**/*.{js,jsx}",
+    "format": "prettier {client,server}/**/*.{js,jsx} --write"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,22 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^3.5.1"
+    "babel-eslint": "^8.2.3",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-react": "^7.7.0",
+    "husky": "^1.0.0-rc.1",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.12.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{client,server}/**/*.{js,jsx}": ["eslint", "prettier --write", "git add"]
   },
   "dependencies": {}
 }
