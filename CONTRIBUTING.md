@@ -13,10 +13,17 @@ The following is a set of guidelines for contributing to Guess The Quote Project
 * [Your First Code Contribution](your-first-code-contribution)
 
 ## Feature Development
+First verify if you have added a upstream
+`$>git remote -v
+origin  https://github.com/your-username/guess-quote.git (fetch)
+origin  https://github.com/your-username/guess-quote.git (push)
+upstream https://github.com/UdacityMobileWebScholarship/guess-quote.git (fetch)
+upstream https://github.com/UdacityMobileWebScholarship/guess-quote.git (push)
+`
 #### Steps to Follow:    
-1. Start with an updated local development branch -- by checking out the dev branch and pulling changes:    
+1. Start with an updated local development branch -- by checking out the develop branch and pulling changes:    
 `git checkout develop`  
-`git pull origin develop`  
+`git pull upstream develop`  
 
 2. Create and checkout a feature branch:   
 `git checkout -b initials/new-feature-branch-name`  
@@ -26,21 +33,15 @@ The following is a set of guidelines for contributing to Guess The Quote Project
 `git commit -m "Comment about the commit"`  
 
 4. Rebase frequently to incorporate upstream changes:  
-`git fetch origin develop`  
-`git rebase origin/develop`    
+`git fetch upstream`  
+`git rebase upstream/develop`          
 
-- or -  
-`git checkout develop`  
-`git pull`  
-`git checkout initials/new-feature-branch-name`  
-`git rebase develop`    
-
-5. Optional: Perform an interactive rebase (squash) your commits before pushing the branch:  
-`git fetch origin develop`  
-`git rebase -i origin/develop`    
-
-6. Once you have reviewed your changes, and verified formatting and intention, push your changes upstream to origin:   
+5. Once you have reviewed your changes, and verified formatting and intention, you can push the changes to your fork:   
 `git push -u origin initials/new-feature-branch-name`  
+
+You are now ready to create a Pull Request.
+Once you're pull request is successfully accepted make sure to delete the branch on your local filesystem
+`$>git branch -d new-feature-branch-name`
 
 ## Reporting Bugs
 This section guides you on how to submit an effective bug report for Guess The Quote. Following these guidelines will help maintainers and the community understand your report :pencil: and reproduce the behavior :computer: :computer:. When you create a bug report, please include as many details as possible.
