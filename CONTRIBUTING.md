@@ -14,12 +14,12 @@ The following is a set of guidelines for contributing to Guess The Quote Project
 
 ## Feature Development
 First verify if you have added a upstream
-`$>git remote -v
-origin  https://github.com/your-username/guess-quote.git (fetch)
-origin  https://github.com/your-username/guess-quote.git (push)
-upstream https://github.com/UdacityMobileWebScholarship/guess-quote.git (fetch)
-upstream https://github.com/UdacityMobileWebScholarship/guess-quote.git (push)
-`
+`$>git remote -v`<br />
+`origin  https://github.com/your-username/guess-quote.git (fetch)`<br />
+`origin  https://github.com/your-username/guess-quote.git (push)`<br />
+`upstream https://github.com/UdacityMobileWebScholarship/guess-quote.git (fetch)`<br />
+`upstream https://github.com/UdacityMobileWebScholarship/guess-quote.git (push)`<br />
+
 #### Steps to Follow:    
 1. Start with an updated local development branch -- by checking out the develop branch and pulling changes:    
 `git checkout develop`  
