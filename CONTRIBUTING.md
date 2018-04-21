@@ -13,7 +13,7 @@ The following is a set of guidelines for contributing to Guess The Quote Project
 * [Your First Code Contribution](your-first-code-contribution)
 
 ## Feature Development
-First verify if you have added a upstream
+First verify if you have added a upstream<br />
 `$>git remote -v`<br />
 `origin  https://github.com/your-username/guess-quote.git (fetch)`<br />
 `origin  https://github.com/your-username/guess-quote.git (push)`<br />
