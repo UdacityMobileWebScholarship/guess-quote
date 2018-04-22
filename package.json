@@ -35,7 +35,11 @@
     }
   },
   "lint-staged": {
-    "{client,server}/**/*.{js,jsx}": ["eslint", "prettier --write", "git add"]
+    "{client,server}/**/*.{js,jsx}": [
+      "eslint",
+      "prettier --write",
+      "git add"
+    ]
   },
   "dependencies": {}
 }
