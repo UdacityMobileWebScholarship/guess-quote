@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run server\" \" npm run client\" ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint {client,server}/**/*.{js,jsx}",
-    "format": "prettier {client,server}/**/*.{js,jsx} --write"
+    "format": "prettier **/*.{js,jsx,json,css} --write"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,14 @@
   "lint-staged": {
     "{client,server}/**/*.{js,jsx}": [
       "eslint",
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.json": [
+      "prettier --write",
+      "git add"
+    ],
+    "client/src/**/*.css": [
       "prettier --write",
       "git add"
     ]
