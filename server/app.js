@@ -9,7 +9,7 @@ const app = express();
 const userRoutes = require("./api/routes/user");
 
 // connect to local mongoDB
-mongoose.connect("mongodb://localhost:27017/guess-quote");
+mongoose.connect(process.env.DB_URL);
 mongoose.Promise = global.Promise;
 
 app.use(cors());

@@ -43,9 +43,10 @@ It is a fun quiz game which is a  progressive web app(PWA). Built during Collabo
     git clone https://github.com/<your-github-username>/guess-quote.git
     cd guess-quote
     npm run setup
+    cp env.example .env
     npm start
  ```
-  - Open any browser and goto http://localhost:3000  
+  - Open any browser and goto http://localhost:3000
     **(The server is running on http://localhost:3001)**
 
 <details>

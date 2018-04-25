@@ -1,3 +1,8 @@
+const env = require("dotenv").config();
+if (env.error) {
+  throw env.error;
+}
+
 const http = require("http");
 const app = require("./app");
 
