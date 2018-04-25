@@ -6,7 +6,9 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-const userRoutes = require("./api/routes/user");
+
+const routes = require('./api/routes/')
+
 
 // connect to local mongoDB
 mongoose.connect(process.env.DB_URL);
@@ -18,7 +20,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // routes
-app.use("/user", userRoutes);
+
+app.use('/', routes)
 
 // error handling
 app.use((req, res, next) => {
