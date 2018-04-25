@@ -110,3 +110,7 @@ We are using **Git Branching Model** for production and development purposes.You
  - `master` : This branch reflects the _PRODUCTION READY STATE_
 
 For more details regarding contributing refer [CONTRIBUTING.md](https://github.com/twishasaraiya/GuessTheQuote/blob/master/CONTRIBUTING.md)
+
+## License
+
+[MIT License](LICENSE)
