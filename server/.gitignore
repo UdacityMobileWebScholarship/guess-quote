@@ -11,3 +11,7 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+
+.env
+.env.local
+.env.staging
