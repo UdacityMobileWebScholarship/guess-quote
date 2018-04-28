@@ -9,7 +9,9 @@
     "client": "cd ./client/ && npm start",
     "server": "cd ./server/ && npm start",
     "dev": "concurrently \"npm run server\" \" npm run client\" ",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:client": "cd ./client/ && npm test",
+    "test:server": "cd ./server/ && npm test",
+    "test": "concurrently \"npm run test:server\" \" npm run test:client\" ",
     "lint": "eslint {client,server}/**/*.{js,jsx}",
     "format": "prettier **/*.{js,jsx,json,css} --write"
   },
@@ -24,6 +26,7 @@
     "concurrently": "^3.5.1",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-jest": "^21.15.1",
     "eslint-plugin-react": "^7.7.0",
     "husky": "^1.0.0-rc.1",
     "lint-staged": "^7.0.4",
