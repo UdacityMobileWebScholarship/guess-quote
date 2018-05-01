@@ -4,7 +4,8 @@
   "description": "RESTful API for GuessTheQuote",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js --config nodemon.json"
+    "start": "nodemon server.js --config nodemon.json",
+    "test": "jest --watch --runInBand"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.1",
     "lodash": "^4.17.5",
@@ -33,6 +35,8 @@
     "validator": "^9.4.1"
   },
   "devDependencies": {
-    "nodemon": "^1.17.3"
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.3",
+    "supertest": "^3.0.0"
   }
 }

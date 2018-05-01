@@ -1,8 +1,10 @@
 {
   "env": {
     "es6": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "parserOptions": { "ecmaVersion": 2018 },
-  "extends": ["eslint:recommended", "prettier"]
+  "extends": ["eslint:recommended", "plugin:jest/recommended", "prettier"],
+  "plugins": ["jest"]
 }
