@@ -5,33 +5,27 @@ import "./HowToPlay.css";
 const HowToPlay = () => {
   return (
     <div className="HowToplay">
-      <h1>Instructions</h1>
+      <h1>How To Play</h1>
+      <h5>Choose the correct author who has quoted the sentence</h5>
       <ul className="list-group">
         <li className="list-group-item">
-          Click on <b>Play</b> button to start the quiz
+          For Each question you have 30 seconds before the timer runs out
         </li>
         <li className="list-group-item">
-          For Each question you will have 120 seconds to choose the right quote
+          Each correct answer gains you 100 points
         </li>
         <li className="list-group-item">
-          You will be having four multiple choices in order to choose the right
-          answer
+          Score remains the same for wrong or timed-out answer
         </li>
         <li className="list-group-item">
-          Your score will decrease by -1 for incorrect answer or if time runs
-          out
+          Your progress will be displayed accordingly when you move-on for the
+          next-quote
         </li>
         <li className="list-group-item">
-          Your score will increase by +1 for correct answer
-        </li>
-        <li className="list-group-item">
-          Your final score will be displayed after answering the question{" "}
+          <span>Note </span>: In order to keep track of the score , you have to
+          sign-up with the game
         </li>
       </ul>
-      <p>
-        Note : In order to keep track of the score , you have to sign-up with
-        the game{" "}
-      </p>
     </div>
   );
 };

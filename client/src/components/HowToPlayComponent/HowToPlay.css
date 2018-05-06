@@ -1,15 +1,18 @@
 .HowToplay {
   font-family: "Segoe UI", Roboto;
   font-size: 1rem;
-
+  background-color: #9b59b6;
+  color: #fff;
   /*padding-top: 5%;*/
 }
 .HowToplay h1 {
-  font-style: italic;
-  color: #e74c3c;
-  font-variant: small-caps;
-  font-family: Brush Script MT, Brush Script Std, cursive;
-  letter-spacing: 2px;
+  font-style: bold;
+  color: #fff;
+}
+.HowToplay h4 {
+  font-style: bold;
+  color: #fff;
+  font-size: 2rem;
 }
 .HowToplay ul {
   list-style: lower-alpha;
@@ -28,8 +31,10 @@
 .list-group-item {
   position: relative;
   display: block;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.55rem;
   margin-bottom: 10px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: left;
+}
+span {
+  font-weight: bold;
 }
