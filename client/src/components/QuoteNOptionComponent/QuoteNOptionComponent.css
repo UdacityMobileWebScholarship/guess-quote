@@ -1,0 +1,85 @@
+.quiz-option-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #d3d3d3;
+  border-radius: 3px;
+}
+
+.options {
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+}
+.question {
+  margin: 0;
+  padding: 0.5rem 2.5rem 1.5rem;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.radioCustomButton {
+  position: absolute;
+  width: auto;
+  opacity: 0;
+}
+
+.answerOption {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #eee;
+}
+
+.answerOption:hover {
+  background-color: #eefbfe;
+}
+
+.radioCustomButton {
+  position: absolute;
+  width: auto;
+  opacity: 0;
+}
+
+.radioCustomButton,
+.radioCustomLabel {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radioCustomLabel {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem 2.5rem 1.5rem 5rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.radioCustomButton ~ .radioCustomLabel:before {
+  position: absolute;
+  top: 20px;
+  left: 38px;
+  width: 28px;
+  height: 28px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.radioCustomButton:checked ~ .radioCustomLabel:before {
+  content: "";
+  background: #8bc53f url(./icon-check.svg) no-repeat;
+  background-size: 27px;
+  border-color: #8bc53f;
+}
