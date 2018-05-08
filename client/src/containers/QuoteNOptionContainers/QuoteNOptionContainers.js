@@ -12,11 +12,23 @@ class QuoteNOptionContainer extends PureComponent {
     this.props.onFetchQuoteNOptionAction();
   }
 
+  handleAnswerSelected(e) {
+    let selectedOption = JSON.parse(e.currentTarget.value);
+    if (selectedOption.is_correct) {
+      alert("Your answer is correct");
+    }
+  }
+
   render() {
     return (
       <div className="QuoteNOptionContainer">
         {" "}
-        {<QuoteNOptionComponent question={this.props.quoteNOptions.question} />}
+        {
+          <QuoteNOptionComponent
+            quoteNOption={this.props.quoteNOptions.quoteNOption}
+            onAnswerSelected={this.handleAnswerSelected}
+          />
+        }
       </div>
     );
   }
@@ -24,8 +36,8 @@ class QuoteNOptionContainer extends PureComponent {
 
 QuoteNOptionContainer.propTypes = {
   quoteNOptions: PropTypes.shape({
-    question: PropTypes.shape({
-      title: PropTypes.string.isRequired,
+    quoteNOption: PropTypes.shape({
+      title: PropTypes.string,
       options: PropTypes.arrayOf(
         PropTypes.shape({
           value: PropTypes.string.isRequired,

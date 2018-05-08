@@ -4,17 +4,21 @@ import Quote from "./Quote";
 import Options from "./Options";
 import "./QuoteNOptionComponent.css";
 
-const QuoteNOptionComponent = ({ question }) => {
+const QuoteNOptionComponent = ({ quoteNOption, onAnswerSelected }) => {
   return (
     <div className="quiz-option-container">
-      <Quote quote={question.title} />
-      <Options options={question.options} />
+      <Quote quote={quoteNOption.title} />
+      <Options
+        options={quoteNOption.options}
+        onAnswerSelected={onAnswerSelected}
+      />
     </div>
   );
 };
 
 QuoteNOptionComponent.propTypes = {
-  question: PropTypes.shape.isRequired
+  quoteNOption: PropTypes.shape.isRequired,
+  onAnswerSelected: PropTypes.func.isRequired
 };
 
 export default QuoteNOptionComponent;

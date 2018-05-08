@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./QuoteNOptionComponent.css";
 
-const Options = ({ options }) => {
+const Options = ({ options, onAnswerSelected }) => {
   return (
     <div className="options">
       <ul className="answerOptions">
@@ -14,6 +14,8 @@ const Options = ({ options }) => {
                 className="radioCustomButton"
                 name="radioGroup"
                 id={item.value}
+                onChange={onAnswerSelected}
+                value={JSON.stringify(item)}
               />
               <label className="radioCustomLabel" htmlFor={item.value}>
                 {item.value}
@@ -27,7 +29,8 @@ const Options = ({ options }) => {
 };
 
 Options.propTypes = {
-  options: PropTypes.array
+  options: PropTypes.array,
+  onAnswerSelected: PropTypes.func.isRequired
 };
 
 export default Options;

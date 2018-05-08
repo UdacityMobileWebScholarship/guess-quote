@@ -5,7 +5,7 @@ import "./QuoteNOptionComponent.css";
 const Quote = ({ quote }) => {
   return (
     <div>
-      <h2 className="question">{quote}</h2>
+      <h2 className="quote">{quote}</h2>
     </div>
   );
 };

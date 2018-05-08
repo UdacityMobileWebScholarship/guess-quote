@@ -2,10 +2,10 @@ export const SET_QUOTE_N_OPTIONS = "SET_QUOTE_N_OPTIONS";
 
 export const setQuoteNOptions = () => ({
   type: SET_QUOTE_N_OPTIONS,
-  payload: { question: questions[0] }
+  payload: { quoteNOption: quoteNOptions[0] }
 });
 
-const questions = [
+const quoteNOptions = [
   {
     title: "From where does Veeru propose to Basanti in Sholay?",
     options: [

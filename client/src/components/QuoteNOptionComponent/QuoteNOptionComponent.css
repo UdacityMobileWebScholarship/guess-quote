@@ -13,7 +13,7 @@
   margin: 0px;
   text-align: left;
 }
-.question {
+.quote {
   margin: 0;
   padding: 0.5rem 2.5rem 1.5rem;
 }
@@ -79,7 +79,7 @@ ul {
 
 .radioCustomButton:checked ~ .radioCustomLabel:before {
   content: "";
-  background: #8bc53f url(./icon-check.svg) no-repeat;
+  background: #8bc53f url(./star.svg) no-repeat;
   background-size: 27px;
   border-color: #8bc53f;
 }
