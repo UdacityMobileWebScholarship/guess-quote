@@ -29,9 +29,4 @@ const HowToPlay = () => {
     </div>
   );
 };
-
-// HowToPlay.propTypes = {
-
-// };
-
 export default HowToPlay;

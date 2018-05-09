@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 import SampleComponent from "../../components/SampleComponent";
-import HowToPlay from "../../components/HowToPlayComponent/HowToPlay";
 import { sampleAction } from "../../actions/sample";
 
 class SampleContainer extends PureComponent {
@@ -17,7 +16,6 @@ class SampleContainer extends PureComponent {
     return (
       <div className="SampleContainer">
         <SampleComponent message={this.props.sample.message} />
-        <HowToPlay />
       </div>
     );
   }
