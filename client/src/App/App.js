@@ -10,4 +10,8 @@ App.propTypes = {
   children: PropTypes.node.isRequired
 };
 
+App.defaultProps = {
+  children: <div>Loading</div>
+};
+
 export default App;
