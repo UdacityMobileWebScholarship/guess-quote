@@ -15,7 +15,7 @@ class ScoreComponent extends React.Component {
     this.setState(newState, 10);
   }
   render() {
-    return <div className="score">Score:{this.state.score}</div>;
+    return <div className="score">Score:{this.score}</div>;
   }
 }
 
