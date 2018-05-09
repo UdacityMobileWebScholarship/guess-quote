@@ -18,5 +18,11 @@
     "ecmaFeatures": {
       "jsx": true
     }
+  },
+  "rules": {
+    "eqeqeq": "error",
+    "no-invalid-this": "error",
+    "no-var": "error",
+    "radix": "error"
   }
 }
