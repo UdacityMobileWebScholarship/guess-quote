@@ -1,22 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./ScoreComponent.css";
+const ScoreComponent = ({ score }) => {
+  return <div className="score">Score:{score}</div>;
+};
 
-class ScoreComponent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { score: 0 };
-  }
-
-  changeScore(amount) {
-    let newState = {};
-    let score = this.state.score;
-    score = score + amount;
-    newState.score = score;
-    this.setState(newState, 10);
-  }
-  render() {
-    return <div className="score">Score:{this.score}</div>;
-  }
-}
+ScoreComponent.propTypes = {
+  score: PropTypes.number
+};
 
 export default ScoreComponent;
