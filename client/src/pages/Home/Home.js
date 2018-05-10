@@ -2,7 +2,6 @@ import React, { PureComponent } from "react";
 import "./Home.css";
 
 import SampleContainer from "../../containers/SampleContainer";
-import QuoteNOptionContainers from "../../containers/QuoteNOptionContainers";
 
 class Home extends PureComponent {
   static displayName = "Home";
@@ -12,7 +11,6 @@ class Home extends PureComponent {
       <div className="Home container">
         <SampleContainer />
         <br />
-        <QuoteNOptionContainers />
       </div>
     );
   }
