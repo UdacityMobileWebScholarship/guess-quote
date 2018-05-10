@@ -4,20 +4,21 @@ const mongoose = require("mongoose");
 const QuestionSchema = mongoose.Schema({
   title: {
     type: String,
-    default: null
+    required: true,
+    unique: true
   },
   options: [
     {
       value: {
         type: String,
-        default: null
+        required: true
       },
       is_correct: {
         type: Boolean,
         default: false
       }
     }
-  ],
+  ],  
   is_deleted: {
     type: Boolean,
     default: false
