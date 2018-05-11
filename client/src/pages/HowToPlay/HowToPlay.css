@@ -1,0 +1,40 @@
+.HowToplay {
+  font-family: "Segoe UI", Roboto;
+  font-size: 1rem;
+  color: #fff;
+  /*padding-top: 5%;*/
+}
+
+.HowToplay h1 {
+  font-style: bold;
+  color: #fff;
+}
+.HowToplay h4 {
+  font-style: bold;
+  color: #fff;
+  font-size: 2rem;
+}
+.HowToplay ul {
+  list-style: lower-alpha;
+}
+.list-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.55rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+span {
+  font-weight: bold;
+}
