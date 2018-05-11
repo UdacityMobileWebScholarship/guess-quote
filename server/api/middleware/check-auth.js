@@ -1,5 +1,5 @@
 // TODO
-var { User } = require("./../models/user");
+var User = require("./../models/user");
 
 module.exports = (req, res, next) => {
   // Token verification middleware

@@ -2,15 +2,12 @@ const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
+const fs = require('fs');
+const Question = require("./api/models/question");
 
 const app = express();
 
-const userRoutes = require("./api/routes/user");
-
-// connect to local mongoDB
-mongoose.connect("mongodb://localhost:27017/guess-quote");
-mongoose.Promise = global.Promise;
+const routes = require("./api/routes/");
 
 app.use(cors());
 app.use(morgan("dev"));
@@ -18,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // routes
-app.use("/user", userRoutes);
+app.use("/", routes);
 
 // error handling
 app.use((req, res, next) => {

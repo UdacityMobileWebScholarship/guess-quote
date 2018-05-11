@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
+import HowToPlay from "../pages/HowToPlay";
 
 /*
 ## import { Redirect } from 'react-router-dom' if you uncomment this
@@ -48,6 +49,7 @@ const RouteManager = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route component={HowToPlay} />
         <Route component={NotFound} />
       </Switch>
     </Router>

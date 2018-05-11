@@ -9,6 +9,8 @@ router.post("/signup", userController.user_signup);
 
 router.post("/login", userController.user_login);
 
+router.delete("/logout", checkAuth, userController.user_logout);
+
 // TODO: add additional routes for users
 
 //route to test auth middleware
