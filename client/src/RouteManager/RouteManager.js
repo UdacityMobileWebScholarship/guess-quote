@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Quiz from "../pages/Quiz";
+import HowToPlay from "../pages/HowToPlay";
 
 /*
 ## import { Redirect } from 'react-router-dom' if you uncomment this
@@ -50,6 +51,7 @@ const RouteManager = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/quiz" component={Quiz} />
+        <Route component={HowToPlay} />
         <Route component={NotFound} />
       </Switch>
     </Router>

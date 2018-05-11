@@ -1,6 +1,6 @@
 const _ = require("lodash");
 
-const { User } = require("../models/user");
+const User = require("../models/user");
 
 exports.user_signup = (req, res) => {
   // TODO
@@ -33,4 +33,15 @@ exports.user_login = (req, res) => {
     .catch(e => {
       res.status(400).send((e, "Incorrect Credentials"));
     });
+};
+
+exports.user_logout = (req, res) => {
+  req.user.removeToken(req.token).then(
+    () => {
+      res.status(200).send();
+    },
+    () => {
+      res.status(400).send();
+    }
+  );
 };
