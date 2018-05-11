@@ -1,6 +1,6 @@
 const _ = require("lodash");
 
-const { User } = require("../models/user");
+const User = require("../models/user");
 
 exports.user_signup = (req, res) => {
   // TODO
