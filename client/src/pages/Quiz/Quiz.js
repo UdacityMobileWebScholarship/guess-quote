@@ -7,7 +7,7 @@ class Quiz extends PureComponent {
 
   render() {
     return (
-      <div className="Quiz container">
+      <div className="quizpage">
         <br />
         <br />
         <QuoteNOptionContainers />

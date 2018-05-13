@@ -1,10 +1,11 @@
 .quiz-option-container {
   position: relative;
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: #d3d3d3;
+  /*background: #d3d3d3;*/
+  font-family: Gotham;
   border-radius: 3px;
 }
 
@@ -15,7 +16,22 @@
 }
 .quote {
   margin: 0;
-  padding: 0.5rem 2.5rem 1.5rem;
+  padding: 0.5rem 2.5rem 1rem;
+  background-color: #757aad;
+  opacity: 0.5;
+  width: auto;
+  max-width: 80%;
+  border-radius: 0.666666em;
+  line-height: 1.5;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 1.4em;
+  font-size: 1rem;
+  transition: opacity 0.5s, left 0.5s 0.5s;
+}
+
+.quote h2 {
+  color: white;
 }
 
 ul {
@@ -30,14 +46,30 @@ ul {
 }
 
 .answerOption {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
-  border-top: 1px solid #eee;
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  padding: 0.5rem 2.5rem 1rem;
+  max-width: 80%;
+  border-radius: 0.666666em;
+  line-height: 1.5;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 1.1em;
+  font-size: 1.1rem;
+  font-family: Gotham;
+  /* border-top: 1px solid #eee;*/
+}
+
+.answerOption input {
+  visibility: hidden;
 }
 
 .answerOption:hover {
-  background-color: #eefbfe;
+  background-color: #a181d3;
 }
 
 .radioCustomButton {
@@ -53,33 +85,46 @@ ul {
   cursor: pointer;
 }
 
-.radioCustomLabel {
+/*.radioCustomLabel {
   position: relative;
   width: 100%;
-  margin: 0;
+  margin: 10px;
   padding: 1.5rem 2.5rem 1.5rem 5rem;
   font-size: 16px;
   line-height: 1.5;
-}
+}*/
 
-.radioCustomButton ~ .radioCustomLabel:before {
+.select-success {
   position: absolute;
-  top: 20px;
-  left: 38px;
-  width: 28px;
-  height: 28px;
+  color: red;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  top: 11px;
+  right: 20px;
+  width: 14px;
+  height: 14px;
   content: "";
-  display: inline-block;
   vertical-align: middle;
-  background: #fff;
-  border: 1px solid #bbb;
   border-radius: 50%;
   transition: all 0.3s;
+  background: url(./green_tick.svg) no-repeat;
+  background-size: 30px;
 }
 
-.radioCustomButton:checked ~ .radioCustomLabel:before {
-  content: "";
-  background: #8bc53f url(./star.svg) no-repeat;
-  background-size: 27px;
-  border-color: #8bc53f;
+.select-fail {
+  position: absolute;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  top: 11px;
+  right: 20px;
+  width: 14px;
+  height: 14px;
+  content: " ";
+  vertical-align: middle;
+  border-radius: 50%;
+  transition: all 0.3s;
+  background: url(./red_cross.svg) no-repeat;
+  background-size: 30px;
 }

@@ -1,8 +1,14 @@
 export const SET_QUOTE_N_OPTIONS = "SET_QUOTE_N_OPTIONS";
+export const SET_SELECTED_ANSWER = "SET_SELECTED_ANSWER";
 
 export const setQuoteNOptions = () => ({
   type: SET_QUOTE_N_OPTIONS,
   payload: { quoteNOption: quoteNOptions[0] }
+});
+
+export const setSelectedAnswer = ans => ({
+  type: SET_SELECTED_ANSWER,
+  payload: { selectedAnswer: ans }
 });
 
 const quoteNOptions = [

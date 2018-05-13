@@ -5,7 +5,10 @@ import "./QuoteNOptionComponent.css";
 const Quote = ({ quote }) => {
   return (
     <div>
-      <h2 className="quote">{quote}</h2>
+      <i className="fa fa-quote-left" aria-hidden="true" />
+      <div className="quote">
+        <h2 className="quote-text">{quote}</h2>
+      </div>
     </div>
   );
 };
