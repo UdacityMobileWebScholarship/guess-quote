@@ -1,6 +1,0 @@
-{
-  "env": {
-    "About Nodemon.json": "Add environment variables here",
-    "DB_URL": "mongodb://localhost:27017/quote-app"
-  }
-}

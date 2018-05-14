@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "seed": "node seeder.js",
-    "start": "nodemon server.js --config nodemon.json",
+    "start": "nodemon server.js",
     "test": "jest --watch --runInBand"
   },
   "repository": {
