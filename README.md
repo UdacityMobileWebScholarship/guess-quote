@@ -1,4 +1,4 @@
-<p align="center"> <img height="100" src="https://raw.githubusercontent.com/twishasaraiya/GuessTheQuote/master/design-assets/icon.png"></p>
+<p align="center"> <img height="200" src="https://github.com/ManajitPal/guess-quote/blob/master/client/public/assets/png/logo-complete.png"></p>
 <h1 align="center">GUESS THE QUOTE</h1>
 
 It is a fun quiz game which is a  progressive web app(PWA). Built during Collaborative Projects in Google Udacity Mobile Web Specialist Scholarship.This project is built to dive further deep into PWA and learn about caching music and animations using service worker.
