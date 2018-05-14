@@ -1,16 +1,16 @@
 {
-  "name": "GuessTheQuote-api",
+  "name": "guess-quote-server",
   "version": "1.0.0",
   "description": "RESTful API for GuessTheQuote",
   "main": "server.js",
   "scripts": {
     "seed": "node seeder.js",
-    "start": "nodemon server.js --config nodemon.json",
+    "start": "nodemon server.js",
     "test": "jest --watch --runInBand"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twishasaraiya/GuessTheQuote.git"
+    "url": "git+https://github.com/UdacityMobileWebScholarship/guess-quote"
   },
   "keywords": [
     "node",
@@ -20,9 +20,9 @@
   "author": "GUCS-2018",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/twishasaraiya/GuessTheQuote/issues"
+    "url": "https://github.com/UdacityMobileWebScholarship/guess-quote/issues"
   },
-  "homepage": "https://github.com/twishasaraiya/GuessTheQuote",
+  "homepage": "https://github.com/UdacityMobileWebScholarship/guess-quote",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",

@@ -10,6 +10,7 @@ class Home extends PureComponent {
     return (
       <div className="Home container">
         <SampleContainer />
+        <br />
       </div>
     );
   }

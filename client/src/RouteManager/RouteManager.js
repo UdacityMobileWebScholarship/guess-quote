@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
+import Quiz from "../pages/Quiz";
 import HowToPlay from "../pages/HowToPlay";
 
 /*
@@ -49,7 +51,8 @@ const RouteManager = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route component={HowToPlay} />
+        <Route exact path="/quiz" component={Quiz} />
+        <Route exact path="/how-to-play" component={HowToPlay} />
         <Route component={NotFound} />
       </Switch>
     </Router>
