@@ -1,3 +1,184 @@
+/**  Importing Icons and Fonts  **/
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:700");
+@import url("https://unpkg.com/ionicons@4.0.0/dist/css/ionicons.min.css");
+
+/**  Default Setup  **/
+* {
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: #f3d3ff;
+}
+*::-moz-selection {
+  background-color: #f3d3ff;
+}
+
 .Home {
+  font-family: "Fredoka One", cursive;
+  font-weight: 400;
+
   width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 2.5rem 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(
+    top left,
+    #f2f2f2 30%,
+    #dde9f4 100%
+  );
+  background-image: -o-linear-gradient(top left, #f2f2f2 30%, #dde9f4 100%);
+  background-image: linear-gradient(to bottom right, #f2f2f2 30%, #dde9f4 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.Home .container {
+  display: flex;
+}
+
+.Home .title {
+  color: #afb9bd;
+  font-size: 1.8rem;
+}
+
+.Home .column {
+  flex: 1;
+}
+
+.Home .logo {
+  margin: 1.5rem 10px 0 10px;
+  padding: 4rem 3.5rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.Home .logo .capsule {
+  position: relative;
+  z-index: 2;
+
+  background-color: #ffffff;
+  display: inline-block;
+  font-size: 2.3rem;
+  color: #2f2f2f;
+  border-radius: 100vh;
+  padding: 15px 5rem;
+  box-shadow: 0 1.2rem 40px rgba(0, 0, 0, 0.08);
+}
+.Home .logo .capsule.back {
+  z-index: 1;
+  top: -1rem;
+  left: 3rem;
+  font-size: 1.8rem;
+  padding: 15px 6rem;
+}
+.Home .logo .capsule.front {
+  top: -2rem;
+  left: -1.5rem;
+}
+
+.Home .quote-1,
+.quote-2 {
+  position: absolute;
+  width: 3.5rem;
+  user-select: none;
+}
+.Home .quote-1 {
+  top: 0;
+  left: 0;
+  transform: rotate(30deg);
+}
+.Home .quote-2 {
+  bottom: 0;
+  right: 0;
+  transform: rotate(210deg);
+}
+
+.Home .controls {
+  text-align: right;
+  padding-top: 5rem;
+}
+
+.Home .button {
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+  padding: 20px 0 20px 2.7rem;
+  margin: 10px 0;
+  font-size: 2rem;
+  border-top-left-radius: 50vh;
+  border-bottom-left-radius: 50vh;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+
+  background-color: #ffffff;
+  color: #a052bf;
+  box-shadow: 0 1.2rem 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+.Home .button:hover {
+  background-color: #f0f0f0;
+  transform: scaleX(1.05);
+}
+.Home .button:active {
+  transform: translateY(2px);
+  box-shadow: 0 0.2rem 40px rgba(0, 0, 0, 0.08);
+}
+.Home .button.primary {
+  background-color: #a052bf;
+  color: #ffffff;
+  box-shadow: 0 0.8rem 30px rgba(160, 82, 191, 0.3);
+}
+.Home .button.primary:hover {
+  background-color: #7e4097;
+}
+.Home .button.primary:active {
+  box-shadow: 0 0.2rem 30px rgba(160, 82, 191, 0.3);
+}
+.Home .button.github {
+  padding: 20px 0 20px 40px;
+  width: 85px;
+}
+
+.Home .footer {
+  flex-basis: 100%;
+  padding: 5rem 30px 0 30px;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  text-align: right;
+}
+.Home .footer a {
+  color: #afb9bd;
+  padding: 0 15px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.Home .footer a:hover {
+  color: #84898b;
+}
+
+/**  Responsive fixes  **/
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .Home .container {
+    flex-direction: column;
+  }
+
+  .Home .controls {
+    padding-top: 2rem;
+  }
+
+  .Home .logo {
+    margin: 1.5rem 10px 0 10px;
+    padding: 5rem 1.5rem 2rem 1.5rem;
+  }
+
+  .Home .footer {
+    padding: 5rem 0 0 0;
+    text-align: center;
+  }
 }
