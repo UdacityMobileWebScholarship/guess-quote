@@ -1,7 +1,7 @@
 <p align="center"> <img height="200" src="https://github.com/ManajitPal/guess-quote/blob/master/client/public/assets/png/logo-complete.png"></p>
 <h1 align="center">GUESS THE QUOTE</h1>
 
-It is a fun quiz game which is a  progressive web app(PWA). Built during Collaborative Projects in Google Udacity Mobile Web Specialist Scholarship.This project is built to dive further deep into PWA and learn about caching music and animations using service worker.
+It is a fun quiz game which is a  progressive web app(PWA). Built during Collaborative Projects in Google Udacity Mobile Web Specialist Scholarship. This project is built to dive further deep into PWA and learn about caching music and animations using service worker.
 
 ## Table Of Contents
 
@@ -75,15 +75,15 @@ Once you have forked as directed in the previous section, you would not be follo
 
 #### Next steps
 
-You are all good to start contributing. You might however want to
+You are all good to start contributing. You might, however, want to
 make sure you periodically update the `origin/master` branch which is from your fork, with the content from `upstream/master` which is this repository's dev branch.
 
 **Why?**
 Because, Just before you submit Pull requests, or before you even change a feature, you **Need** to ensure you have all the latest changes from upstream.
 
-This is a healthy habit to inculcate, and would ease out headaches later.
+This is a healthy habit to inculcate and would ease out headaches later.
 
-Also, Before you do the above , and begin coding something new, or modifying existing stuff, make sure you have **merged**.
+Also, Before you do the above, and begin coding something new, or modifying existing stuff, make sure you have **merged**.
 
 the simplest is a fast forward merge
 
@@ -106,7 +106,7 @@ But merges are complicated. Please do read official documentation on merge. Unde
 ## Contributing Guidelines
 
 Contributions are always welcome.
-We are using **Git Branching Model** for production and development purposes.You can read more about it hear [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/).Basically what this means is
+We are using **Git Branching Model** for production and development purposes. You can read more about it here [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/). Basically what this means is
  - `develop` : This branch reflects a state with the latest delivered _DEVELOPMENT_ changes for the next release
  - `master` : This branch reflects the _PRODUCTION READY STATE_
 
